@@ -1,0 +1,36 @@
+.Questions {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: underline;
+  color: #94be82;
+}
+
+.Button {
+  height: 40px;
+  background-color: #d2f4d2;
+  width: 20%;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-right: 10px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  color: gray;
+}
+
+.Button:hover,
+.Button:active {
+  background-color: gray;
+  color: #d2f4d2;
+}
+
+.QuizDifficulty {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .QuizDifficulty button {
+    height: auto;
+  }
+}

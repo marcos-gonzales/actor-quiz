@@ -1,0 +1,90 @@
+.ActorContainer {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 22px;
+  color: #324632;
+}
+
+.InputForm {
+  margin-bottom: 15px;
+}
+
+.InputForm input {
+  margin-right: 10px;
+  height: 24px;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.InputForm input:active,
+.InputForm input:focus {
+  background-color: #eff1ed;
+}
+
+.InputForm button {
+  border-radius: 4px;
+  height: 40px;
+  width: 25%;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  color: gray;
+  background-color: #d2f4d2;
+}
+
+.InputForm button:hover,
+.InputForm button:active {
+  color: #d2f4d2;
+  background-color: gray;
+}
+
+.Form {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button {
+  padding: 5px;
+  border-radius: 4px;
+  width: 20%;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  color: gray;
+  background-color: #d2f4d2;
+}
+
+.Button:hover,
+.Button:active {
+  color: #d2f4d2;
+  background-color: gray;
+}
+
+.Waiting {
+  text-align: center;
+  color: #324632;
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .Form {
+    flex-direction: column;
+  }
+  .Button {
+    width: auto;
+  }
+  form .Button {
+    margin-top: 10px;
+  }
+  .InputForm button {
+    margin-top: 10px;
+    width: auto;
+  }
+}

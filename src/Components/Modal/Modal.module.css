@@ -1,0 +1,16 @@
+.Modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 400;
+  background: #91d791;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .Modal {
+    font-size: 25px;
+  }
+}
