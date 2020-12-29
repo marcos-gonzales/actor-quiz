@@ -31,10 +31,6 @@ const GetActor = ({
     Math.floor(Math.random() * Math.floor(75) + 1)
   )
 
-  const [backupRadioButton, setBackupRadioButton] = useState(
-    Math.floor(Math.random() * Math.floor(75) + 1)
-  )
-
   const [radioButtonValue, setRadioButtonValue] = useState(null)
   const [radioButtonAnswer, setRadioButtonAnswer] = useState(null)
 
@@ -57,15 +53,18 @@ const GetActor = ({
 
     //To filter out duplicates
     if (number === radioButtonTwo) {
-      setRadioButtonTwo(backupRadioButton)
+      let rando = Math.floor(Math.random() * Math.floor(75) + 1)
+      setRadioButtonTwo(rando)
       console.log('working')
     }
     if (number === radioButtonThree) {
-      setRadioButtonThree(backupRadioButton)
+      let rando = Math.floor(Math.random() * Math.floor(75) + 1)
+      setRadioButtonThree(rando)
       console.log('working')
     }
     if (number === radioButtonFour) {
-      setRadioButtonFour(backupRadioButton)
+      let rando = Math.floor(Math.random() * Math.floor(75) + 1)
+      setRadioButtonFour(rando)
       console.log('working')
     }
   }
@@ -233,6 +232,7 @@ const GetActor = ({
         `https://imdb-api.com/en/API/searchname/k_hcieroty/${actorList[maleOrFemale][number]}`
       )
       .then((data) => setActor(data.data))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [number])
 
   const checkAnswer = () => {
